@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/todo-icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/362549c057.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>To Do project</title>
+</head>
+
+<body>
+    <div class="container flex flex-ai-c flex-jc-c  ">
+        <div class="backdrop"></div>
+        <main class="main-con scaleupcenter ">
+
+            <div class="name-of-app flex flex-jc-c flex-ai-c ">
+                <h2>TODO List</h2>
+                <img src="img/todo-icon.png" alt="">
+            </div>
+            <h3 class="task-name">Tasks:</h3> 
+            <div  class="time_date td"></div>
+            <div class="TaskSamp">
+                <div class="newtask  flex flex-jc-sb addbtn">
+                    <p class="addnewtask "> Add new task </p>
+                    <span>
+                        <i class="fa-solid fa-circle-plus addbtn"></i>
+                    </span>
+                </div>
+            </div>
+            <div id="task"></div>
+
+
+        </main>
+        <!-- <div class="addbtn scaleupcenter">
+            <i class="fa-solid fa-circle-plus fa-3x"></i>
+        </div> -->
+        <form class="modal flex flex-fd-c scaleupcenter " id="form">
+            <h2 class="new-task">
+                Add New Task
+            </h2>
+            <div class="title-input">
+                <h4 class="taskTitle">
+                    Title
+                </h4>
+                <input type="text" class="titleInput">
+                <div class="msg"></div>
+            </div>
+            <div class="date-con">
+                <h4 class="date"> Date</h4>
+                <input type="date" name="" id="deyt">
+            </div>
+            <div class="des">
+                <h4 class="description">
+                    Description
+                </h4>
+                <textarea name="txtArea" id="textArea" cols="30" rows="10"></div></textarea>
+                <div class="msg"></div>
+            </div>
+            <div class="buttons flex">
+                <div class="cancelbtn">Cancel</div>
+                <!-- <button>Add</button> -->
+                <input type="submit" value="Add" class="add">
+            </div>
+        </form>
+    </div> 
+    <script src="js/library/moment.min.js"></script>
+    <script src="js/index.js"></script>
+   
+</body>
+
+</html>

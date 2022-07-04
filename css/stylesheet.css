@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html *,
+html *::before,
+html *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html body .container {
+  height: inherit;
+}
+
+html body .position-relative {
+  position: relative;
+}
+
+html body .position-absolute {
+  position: absolute;
+}
+
+html body .position-fixed {
+  position: fixed;
+}
+
+.cont {
+  width: 85%;
+  margin-inline: auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-fd-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-fd-r {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-se {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-items: center;
+}
+
+.index {
+  z-index: -2;
+}
+
+.td {
+  float: right;
+  font-size: 0.8rem;
+  font-family: "Poppins", serif;
+  margin-right: 1.9rem;
+  margin-top: -.6rem;
+}
+
+html body .scaleupcenter {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+          animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+html body .slide-in-top {
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+html body {
+  background-color: #001050;
+  height: 100vh;
+}
+
+html body main {
+  width: 380px;
+  height: 500px;
+  background-color: #fff;
+  margin: 1rem;
+  padding-bottom: 12.5rem;
+  border-radius: 10px;
+  z-index: 0;
+  overflow-y: auto;
+  -webkit-box-shadow: #95979959 0px 1px 7px 3px;
+          box-shadow: #95979959 0px 1px 7px 3px;
+}
+
+html body main .name-of-app {
+  margin-top: 0.9rem;
+  margin-inline: 1rem;
+}
+
+html body main .name-of-app h2 {
+  width: 8rem;
+  font-family: "Montserrat", sans-serif;
+  color: #021e8a;
+}
+
+html body main .name-of-app img {
+  width: 30px;
+  height: 30px;
+}
+
+html body main .task-name {
+  margin-left: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html body main .Description {
+  margin-inline: auto;
+  padding: 0.5rem;
+  background-color: #92c9ff44;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  width: 100%;
+  padding-top: -1.5rem;
+  font-size: 0.9rem;
+  font-family: Arial;
+}
+
+@media (max-width: 37.9375em) {
+  html body main .Description {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    font-size: 0.7rem;
+  }
+}
+
+html body main .newtask {
+  gap: 10%;
+  margin-top: 0.8rem;
+  padding: 0.5rem;
+  border: 2px solid #98caff;
+  width: 85%;
+  margin-inline: auto;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 0.9rem;
+  background-color: #dfeeff3b;
+}
+
+@media (max-width: 37.9375em) {
+  html body main .newtask {
+    width: 85%;
+    gap: 15%;
+  }
+}
+
+html body main .newtask i {
+  color: #041a74;
+  cursor: pointer;
+}
+
+html body main .newtask .addnewtask {
+  color: #041a74;
+}
+
+html body main .task1 {
+  gap: 10%;
+  margin-top: 0.7rem;
+  padding: 0.6rem;
+  background-color: #cee6ff;
+  width: 100%;
+  margin-inline: auto;
+  border-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  cursor: pointer;
+}
+
+html body main .task1:hover::before {
+  position: absolute;
+  content: "click to view the description";
+  margin-left: 4rem;
+  margin-top: -2rem;
+  padding: 0.3rem;
+  background-color: #0b6fcca2;
+  color: #fdfdfd;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 37.9375em) {
+  html body main .task1 {
+    width: 100%;
+    gap: 15%;
+  }
+}
+
+html body main .task1 .title {
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  word-break: break-all;
+  -webkit-hyphens: manual;
+      -ms-hyphens: manual;
+          hyphens: manual;
+  font-size: 0.9rem;
+  font-family: Arial;
+}
+
+@media (max-width: 37.9375em) {
+  html body main .task1 .title {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    font-size: 0.7rem;
+  }
+}
+
+html body main .task1 span {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+}
+
+@media (max-width: 37.9375em) {
+  html body main .task1 span {
+    -ms-flex-preferred-size: 85%;
+        flex-basis: 85%;
+  }
+}
+
+html body main .task1 span .date {
+  width: 100%;
+  margin-right: 0.6rem;
+  margin-left: 0.3rem;
+  font-size: 0.7rem;
+  font-family: Arial;
+}
+
+@media (max-width: 37.9375em) {
+  html body main .task1 span .date {
+    margin-right: 0.4rem;
+    margin-left: 0.2rem;
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+    font-size: 0.5rem;
+    font-family: Arial;
+  }
+}
+
+html body main .task1 span .fa-solid:hover {
+  color: #0c3bf5;
+}
+
+html body main .task1 span .fa-pen-to-square:hover {
+  color: #0c3bf5;
+}
+
+@media (max-width: 37.9375em) {
+  html body main .task1 {
+    margin-inline: auto;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    gap: 2%;
+    padding: 3%;
+  }
+}
+
+html body .hide {
+  display: none;
+}
+
+html body .modal {
+  -webkit-box-shadow: #cfe9ff30 0px 1px 13px 5px;
+          box-shadow: #cfe9ff30 0px 1px 13px 5px;
+  border-radius: 5px;
+  padding: 1.5rem;
+  display: none;
+  position: absolute;
+  max-width: 100%;
+  color: #fff;
+  background-color: rgba(7, 91, 187, 0.66);
+}
+
+html body .modal .new-task {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.8rem;
+  margin-top: -0.7rem;
+}
+
+@media (max-width: 63.9375em) {
+  html body .modal .new-task {
+    margin-top: -0.3rem;
+  }
+}
+
+html body .modal .msg {
+  margin-top: -.7rem;
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: .9rem;
+}
+
+html body .modal .taskTitle,
+html body .modal .date,
+html body .modal .description {
+  margin-bottom: 0.8rem;
+  font-family: "Arial", sans-serif;
+}
+
+html body .modal .title-input input[type="text"] {
+  height: 1.8rem;
+  width: 100%;
+  margin-bottom: 0.8rem;
+}
+
+html body .modal .title-input input[type="text"]:focus-visible {
+  outline-color: deepskyblue;
+}
+
+html body .modal .date-con input[type="date"] {
+  height: 1.8rem;
+  width: 100%;
+  margin-bottom: 0.8rem;
+}
+
+html body .modal .date-con input[type="date"]:focus-visible {
+  outline-color: deepskyblue;
+}
+
+html body .modal .des textarea {
+  max-width: 100%;
+  width: 307px;
+  margin-top: 0.3rem;
+  margin-bottom: 0.8rem;
+}
+
+html body .modal .des textarea:focus-visible {
+  outline-color: deepskyblue;
+}
+
+@media (max-width: 37.9375em) {
+  html body .modal .des textarea {
+    width: 68vw;
+    margin-top: 0.5rem;
+  }
+}
+
+html body .modal .buttons {
+  margin-top: .8rem;
+  gap: 0.7rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+html body .modal .buttons .cancelbtn {
+  width: 4rem;
+  height: 1.8rem;
+  border-radius: 0.2rem;
+  border: none;
+  background-color: #e25555;
+  color: #fff;
+  text-align: center;
+  padding-top: 0.3rem;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: arial;
+}
+
+html body .modal .buttons input[type="submit"] {
+  color: #fff;
+  width: 4rem;
+  height: 1.8rem;
+  border-radius: 0.2rem;
+  border: none;
+  background-color: #0084ff;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: arial;
+}
+
+html body .backdrop {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.644);
+  z-index: -1;
+  display: none;
+}
+/*# sourceMappingURL=stylesheet.css.map */

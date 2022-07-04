@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    .container {
+      height: inherit;
+    }
+  }
+}
+
+html {
+  body {
+    //Position
+    .position {
+      &-relative {
+        position: relative;
+      }
+      &-absolute {
+        position: absolute;
+      }
+      &-fixed {
+        position: fixed;
+      }
+    }
+  }
+}
+.cont {
+  width: 85%;
+  margin-inline: auto;
+}
+// Flexbox
+.flex {
+  display: flex;
+
+  &-fd-c {
+    flex-direction: column;
+  }
+  &-fd-r {
+    flex-direction: row;
+  }
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-jc-se {
+    justify-content: space-evenly;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+    place-items: center;
+  }
+}
+
+.index {
+  z-index: -2;
+}
+.td {
+  float: right;
+  font: {
+    size: 0.8rem;
+    family: "Poppins", serif;
+  }
+  margin-right: 1.9rem;
+  margin-top: -.6rem;
+}

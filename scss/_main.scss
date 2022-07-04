@@ -1,0 +1,182 @@
+html {
+  body {
+    background-color: #001050;
+    //width: 100vw;
+    height: 100vh;
+
+    main {
+      width: 380px;
+      height: 500px;
+      background-color: #fff;
+      margin: 1rem;
+      padding-bottom: 12.5rem;
+      border-radius: 10px;
+      z-index: 0;
+      overflow-y: auto;
+      box-shadow: #95979959 0px 1px 7px 3px;
+
+      .name-of-app {
+        //width: 10rem;
+        margin-top: 0.9rem;
+        margin-inline: 1rem;
+        h2 {
+          width: 8rem;
+          font-family: "Montserrat", sans-serif;
+          color: #021e8a;
+        }
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .task-name {
+        margin-left: 2rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        //font-weight: 600;
+      }
+    
+      .Description {
+        margin-inline: auto;
+        padding: 0.5rem;
+        background-color: #92c9ff44;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        width: 100%;
+        padding-top: -1.5rem;
+        font: {
+          size: 0.9rem;
+          family: Arial;
+        }
+        @include breakpoint-down(small) {
+          //width: 100%;
+          flex-basis: 100%;
+          font-size: 0.7rem;
+        }
+      }
+      @mixin tooltip() {
+        &::before {
+          position: absolute;
+          content: "click to view the description";
+          margin-left: 4rem;
+          margin-top: -2rem;
+          padding: 0.3rem;
+          background-color: #0b6fcca2;
+          color: #fdfdfd;
+          font: {
+            size: 0.8rem;
+          }
+        }
+      }
+      .newtask {
+        gap: 10%;
+        margin-top: 0.8rem;
+        padding: 0.5rem;
+        border: 2px solid #98caff;
+        width: 85%;
+        margin-inline: auto;
+        border-radius: 4px;
+        cursor: pointer;
+        font: {
+          family: Montserrat;
+          size: 0.9rem;
+        }
+        background-color: #dfeeff3b;
+        @include breakpoint-down(small) {
+          width: 85%;
+          gap: 15%;
+        }
+        i {
+          color: #041a74;
+          cursor: pointer;
+        }
+        .addnewtask {
+          color: #041a74;
+        }
+      }
+      .task1 {
+        //margin-left:2.3rem;
+        gap: 10%;
+        margin-top: 0.7rem;
+        padding: 0.6rem;
+        background-color: #cee6ff;
+        width: 100%;
+        margin-inline: auto;
+        border-radius: 4px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        cursor: pointer;
+        &:hover {
+          @include tooltip();
+        }
+        @include breakpoint-down(small) {
+          width: 100%;
+          gap: 15%;
+        }
+        .title {
+          // width: 90%;
+          flex-basis: 90%;
+          word-break: break-all;
+          hyphens: manual;
+          font: {
+            size: 0.9rem;
+            family: Arial;
+          }
+          @include breakpoint-down(small) {
+            //width: 100%;
+            flex-basis: 100%;
+            font-size: 0.7rem;
+          }
+        }
+        span {
+          //width: 97%;
+          flex-basis: 65%;
+          @include breakpoint-down(small) {
+            flex-basis: 85%;
+            //margin-left: 3rem;
+          }
+          .date {
+            width: 100%;
+            margin-right: 0.6rem;
+            margin-left: 0.3rem;
+            font: {
+              size: 0.7rem;
+              family: Arial;
+            }
+            @include breakpoint-down(small) {
+              margin-right: 0.4rem;
+              margin-left: 0.2rem;
+              flex-basis: 75%;
+              font: {
+                size: 0.5rem;
+                family: Arial;
+              }
+            }
+          }
+          .fa-solid {
+            &:hover {
+              color: #0c3bf5;
+            }
+          }
+          .fa-pen-to-square {
+            &:hover {
+              color: #0c3bf5;
+            }
+          }
+        }
+        @include breakpoint-down(small) {
+          margin-inline: auto;
+          flex-basis: 70%;
+          gap: 2%;
+          padding: 3%;
+        }
+      }
+    }
+    .hide {
+      display: none;
+    }
+
+    
+  }
+}

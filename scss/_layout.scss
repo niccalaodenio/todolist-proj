@@ -1,0 +1,19 @@
+html {
+ 
+    body{
+        height: 100vh;
+        
+        .slide{
+            width: 400px !important;
+            height: 300px !important;
+            .carousel-inner{
+                img{
+                    width: inherit !important;
+                    height: 
+                    inherit  !important;
+                }
+            }
+        }
+    }
+
+}
