@@ -285,7 +285,7 @@ html body main .task1 .title {
   html body main .task1 .title {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -313,9 +313,7 @@ html body main .task1 span .date {
   html body main .task1 span .date {
     margin-right: 0.4rem;
     margin-left: 0.2rem;
-    -ms-flex-preferred-size: 75%;
-        flex-basis: 75%;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     font-family: Arial;
   }
 }
@@ -340,6 +338,10 @@ html body main .task1 span .fa-pen-to-square:hover {
 
 html body .hide {
   display: none;
+}
+
+html body #textArea {
+  padding: .3rem;
 }
 
 html body .modal {
